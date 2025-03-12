@@ -19,7 +19,7 @@ const DoughnutChart = () => {
     datasets: [
       {
         data: [1147, 438, 249, 234, 172],
-        backgroundColor: ["#004d00", "#007000", "#009900", "#00cc00", "#00ff00"],
+        backgroundColor: ["#007000", "#009900", "#00cc00", "#00ff00", "#88f52e"],
         hoverBackgroundColor: ["#006600", "#008b00", "#00b300", "#00e600", "#33ff33"],
         borderWidth: 0,
         cutout: "65%",
@@ -56,18 +56,22 @@ const DoughnutChart = () => {
   };
 
   return (
-    <div className="chart-wrapper">
-      <div className={`chart-container ${animate ? "fade-in" : ""}`}>
-        <Doughnut data={data} options={options} />
-        <div className="chart-label">February</div>
-      </div>
-      <div className="chart-info">
-        <p className="info-title">Minutes Listened</p>
-        <p className="info-hover">{hoveredLabel}</p>
-        <p className="info-minutes">{hoveredMinutes}</p>
+    <div className="center-screen">
+      <div className="chart-wrapper">
+        <h1 className="chart-title">Top Artists</h1> {/* Now inside the card */}
+        <div className={`chart-container ${animate ? "fade-in" : ""}`}>
+          <Doughnut data={data} options={options} />
+          <div className="chart-label">February</div>
+        </div>
+        <div className="chart-info">
+          <p className="info-title">Minutes Listened</p>
+          <p className="info-hover">{hoveredLabel}</p>
+          <p className="info-minutes">{hoveredMinutes}</p>
+        </div>
       </div>
     </div>
   );
+  
 };
 
 export default DoughnutChart;
