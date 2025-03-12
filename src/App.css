@@ -1,6 +1,32 @@
-body{
-  background-color: rgb(180, 180, 180);
+*{
+  margin: 0;
 }
+
+body{
+  background-color: #1b1e21;
+}
+
+h1{
+  color: #fff;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #212529;
+  border-bottom: 1px solid #073000;
+  color: white;
+}
+
+.nav-left,
+.nav-right {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
 
 .app-container {
   margin: 20px;
@@ -14,29 +40,99 @@ body{
 
 .radarChart{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.259);
-  width: 50rem;
+  flex-direction: column;
+  background-color: #212529;
+  width: 53.2rem;
   height: 32rem;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 2px 2px 5px #0000005f;
 }
 
-.radarChart:hover{
-  background-color: rgba(7, 7, 7, 0.358);
-  transition: 0.5s ease-in;
-  transition: 0.2s ease-out;
-}
 
 .mainRadar{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  margin-top: 0;
+  padding: 5rem;
 }
 
 .radarWrapper{
   background-color: transparent;
 }
 
+.mainH1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+
+.barChart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #1b1e21;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#88F52E, #007000);
+  border-radius: 20px;
+}

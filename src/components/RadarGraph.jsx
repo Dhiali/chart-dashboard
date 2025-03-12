@@ -12,7 +12,7 @@ const RadarChart = () => {
         label: "Most Listened Genres",
         data: [3, 3, 3, 1, 4, 4],
         backgroundColor: "rgba(55, 129, 66, 0.2)", // Transparent green fill
-    borderColor: "rgba(59, 142, 70, 0.36)", // Green outline
+    borderColor: "#88f52e", // Green outline
     borderWidth: 2, // Thicker line
     pointBackgroundColor: "rgba(59, 142, 70, 1)", // Green points
     pointBorderColor: "#ffffff", // White border for points
@@ -58,7 +58,6 @@ const RadarChart = () => {
         point: {
             radius: 5,
             hoverRadius: 8, // Make points bigger when hovered
-            hoverBackgroundColor: "rgb(197, 197, 197)", // Change color on hover
         },
         line: {
             borderWidth: 2,
@@ -97,8 +96,8 @@ const RadarChart = () => {
         },
         animation: {
             duration: 1500, // Slower animation
-            easing: "easeInOutQuart", // Smooth transition
-            easing: "easeOutBounce", // Bouncy effect
+            easing: "easeOutBounce", // Smooth transition
+            
             animateDataset: true, // Animate datasets one by one
             
             
