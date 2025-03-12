@@ -4,10 +4,10 @@ A React application showcasing data visualizations using Chart.js. This project 
 
 ## Project Description
 
-This project was developed as part of a group assignment for [Course Name]. It demonstrates the use of Chart.js in combination with React for building a data visualization dashboard. The charts are created using static, hardcoded data and are displayed on a main dashboard page. The app is styled to be responsive and visually appealing, providing a seamless experience across different screen sizes.
+This project was developed as part of a group assignment for DV 200. It demonstrates the use of Chart.js in combination with React for building a data visualization dashboard. The charts are created using static, hardcoded data and are displayed on a main dashboard page. The app is styled to be responsive and visually appealing, providing a seamless experience across different screen sizes.
 
 ## Features
-- Three Different Chart Types: Doughnut, Bar, and Line charts.
+- Three Different Chart Types: Doughnut, Bar, and Radar charts.
 - Component-Based Architecture: Each chart is a reusable React functional component.
 - Static Data: Charts are populated with hardcoded JSON/JavaScript objects.
 
